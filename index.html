@@ -10,36 +10,50 @@
 </head>
 <body>
 	<div style="background: #e6faff;" class="container p-2">
-		<h2>Demo Core Services - Compucloud</h2>
+		<h2 style="text-align: center;" class="card-title">Architecture Championship Core Services - Compucloud</h2>
 	</div>
-	<fieldset>
-		<legend>Información del usuario</legend>
-		<form method="post" action ="guardandoUsuario.php">
-			<p>
-				<label for="Nombre">Nombre:</label>
-				<input type="text" name="nombre" id="nombre">
-			</p>
-			<p>
-				<label for="Apellido">Apellido:</label>
-				<input type="text" name="apellido" id="apellido">
-			</p>
-			<p>
-				<label for="Telefono">Telefono:</label>
-				<input type="text" name="telefono" id="telefono">
-			</p>
-			<p>
-				<label for="sexo">Género</label>
-				<select name="sexo" required name="sexo" id="sexo">
-					<option value="">--Selecciona--</option>
-					<option value="M">Masculino</option>
-					<option value="F">Femenino</option>
-				</select>
-			</p>
-			<p>
-				<input type="submit" name="Submit" id="Submit" value="Guardar Valores">
-			</p>
-		</form>
-	</fieldset>
+	<br>	
+	<div class="card" style="width: 500px; margin: 0 auto;">
+		<fieldset>
+			<h3 style="text-align: center;" class="card-title">Información del usuario</h3>
+			<form method="post" action ="guardandoUsuario.php">
+				<div class="card-body">
+					<div class="mb-3 mt-3">
+						
+						<label for="nombre" class="form-label">Nombre:</label>
+						<input type="text" name="nombre" id="nombre" class="form-control" required>
+						
+					</div>
+					<div class="mb-3 mt-3">
+						
+						<label for="apellido" class="form-label">Apellido:</label>
+						<input type="text" name="apellido" id="apellido" class="form-control" required>
+						
+					</div>
+					<div class="mb-3 mt-3">
+						
+						<label for="telefono" class="form-label">Telefono:</label>
+						<input type="text" name="telefono" id="telefono" class="form-control" required>
+						
+					</div>
+					<div class="mb-3 mt-3">
+						
+						<label for="sexo" class="form-label">Género</label>
+						<select name="sexo" name="sexo" id="sexo" class="form-control" required>
+							<option value="">--Selecciona--</option>
+							<option value="M">Masculino</option>
+							<option value="F">Femenino</option>
+						</select>
+						
+					</div>
+					<div style="text-align: center;">
+						<input type="submit" name="Submit" id="Submit" value="Guardar Valores" class="btn btn-primary">
+						<a href="listarUsuarios.php" class="btn btn-secondary">Listar Usuarios</a>
+					</div>
+				</div>
+			</form>
+		</fieldset>
+	</div>
 </nav>
 </body>
 </html>
