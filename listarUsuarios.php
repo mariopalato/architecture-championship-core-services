@@ -33,10 +33,6 @@ $personas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 			</tr>
 		</thead>
 		<tbody>
-			<!--
-				Atención aquí, sólo esto cambiará
-				Pd: no ignores las llaves de inicio y cierre {}
-			-->
 			<?php foreach($personas as $persona){ ?>
 			<tr>
 				<td><?php echo $persona->id ?></td>
