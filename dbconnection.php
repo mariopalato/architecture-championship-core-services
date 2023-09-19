@@ -4,9 +4,9 @@
 	@author Mario Palato
 */
 $contraseña = "Hola.123";
-$usuario = "root";
+$usuario = "admin";
 $nombre_base_de_datos = "pruebas";
-$host = "localhost";
+$host = "test-db.cpqrw8sjstzv.us-east-2.rds.amazonaws.com";
 try{
 	$base_de_datos = new PDO('mysql:host=' . $host . ';dbname=' . $nombre_base_de_datos, $usuario, $contraseña);
 }catch(Exception $e){
