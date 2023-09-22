@@ -1,7 +1,7 @@
 <?php
 /*
 	Conexión con MySQL y PHP
-	@author Mario Palato
+	@author Compucloud
 */
 $contraseña = "Hola.123";
 $usuario = "admin";
